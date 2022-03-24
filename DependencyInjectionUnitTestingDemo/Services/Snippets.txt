@@ -1,0 +1,28 @@
+﻿	public class SmtpEmailSender : IEmailSender
+	{
+		public Task SendEmailAsync(string email, string subject, string message)
+		{
+			var smtpClient = new SmtpClient();
+			smtpClient.Host = "mx.havit.cz";
+			return smtpClient.SendMailAsync("no-reply@havit.cz", email, subject, message);
+		}
+	}
+
+
+	public class DevelopmentEmailSender : IEmailSender
+	{
+		public Task SendEmailAsync(string email, string subject, string message)
+		{
+			Debug.WriteLine($"EMAIL:: To: {email}, Subject: {subject}, Message: {message}");
+
+			return Task.FromResult(0);
+		}
+	}
+
+
+
+		public void ConfigureDevelopmentServices(IServiceCollection services)
+		{
+			ConfigureServices(services);
+			services.AddTransient<IEmailSender, DevelopmentEmailSender>();
+		}
