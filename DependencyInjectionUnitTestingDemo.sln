@@ -5,6 +5,8 @@ VisualStudioVersion = 17.1.32319.34
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DependencyInjectionUnitTestingDemo", "DependencyInjectionUnitTestingDemo\DependencyInjectionUnitTestingDemo.csproj", "{B978662B-5C93-456A-A027-16AB80047B28}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DependencyInjectionUnitTestingDemoTests", "DependencyInjectionUnitTestingDemoTests\DependencyInjectionUnitTestingDemoTests.csproj", "{5A82F49A-9363-4967-94DB-15FB6A84127D}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{B978662B-5C93-456A-A027-16AB80047B28}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B978662B-5C93-456A-A027-16AB80047B28}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B978662B-5C93-456A-A027-16AB80047B28}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5A82F49A-9363-4967-94DB-15FB6A84127D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5A82F49A-9363-4967-94DB-15FB6A84127D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5A82F49A-9363-4967-94DB-15FB6A84127D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5A82F49A-9363-4967-94DB-15FB6A84127D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
